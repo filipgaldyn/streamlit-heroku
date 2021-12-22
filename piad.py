@@ -73,7 +73,7 @@ df_selected_team = sel_tach[selected_pos]
 df_selected_time = df_selected_team.loc[str(start_date):str(end_date)]
 
 
-st.header('Display Player Stats of Selected Team(s)')
+st.header('Display GeoMos results')
 st.write('Data Dimension: ' + str(df_selected_time.shape[0]) + ' rows and ' + str(df_selected_time.shape[1]) + ' columns.')
 test = df_selected_team.astype(str)
 st.dataframe(df_selected_time)
