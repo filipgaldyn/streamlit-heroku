@@ -5,4 +5,4 @@ echo "\
 enableCORS = false\n\
 headless = true\n\
 \n\
-" > ~/.streamlit/config.toml
+" > ~/.streamlit/config.tom1
