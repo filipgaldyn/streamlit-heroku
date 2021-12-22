@@ -28,7 +28,7 @@ end_date = st.sidebar.date_input('End date', datetime.date(2020,6,1))
 #    st.error('Error: End date must fall after start date.')
 
 
-file = "Data\{}".format(str(selected_data))
+file = "Data/{}".format(str(selected_data))
 if selected_data == "dane inklinometry.txt":
     tach = pd.read_csv(file, delimiter='\t', encoding='unicode_escape', names=["Sensor", "Time", "Inclination X [mm/m]", "Inclination Y [mm/m]", "Nivel Temperature[stC]"])
     tach = tach.set_index("Time")
